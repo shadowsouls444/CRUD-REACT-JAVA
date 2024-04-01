@@ -1,0 +1,314 @@
+.columna {
+    display: flex;
+}
+
+.offcanvas {
+    background-color: blueviolet;
+}
+
+.container-fluid-1 {
+    background-color: blueviolet;
+}
+
+footer {
+    background-color: blueviolet;
+}
+
+h5 {
+    display: flex;
+    font-weight: 900;
+    font-family: "Comic Neue", cursive;
+    margin: 5px;
+}
+
+.titulo1 {
+    display: flex;
+    color: aliceblue;
+    font-size: 5rem;
+    display: inline;
+    font-family: "Comic Neue", cursive;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.titulo2 {
+    display: flex;
+    color: aliceblue;
+    font-size: 5rem;
+    font-family: "Dancing Script", cursive;
+    display: inline;
+    margin-left: 10px;
+}
+
+.titulo-container {
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pincel {
+    display: flex;
+    max-width: 5rem;
+    margin: 5px;
+    margin-top: -1em;
+    margin-left: 10px;
+    height: auto;
+    display: inline;
+    padding-bottom: 10em;
+}
+
+.boton {
+    border-radius: 50%;
+    background-color: blueviolet;
+    border: blueviolet;
+}
+
+.row {
+    display: flex;
+    height: 10rem;
+    margin: 0 auto;
+}
+
+.navbar {
+    height: 150px;
+}
+
+button.navbar-toggler {
+    transform: translateY(5px);
+}
+
+.nav-link {
+    color: aliceblue;
+}
+
+.icon {
+    font-size: 2.5em;
+    color: aliceblue;
+}
+
+.icon-link {
+    display: flex;
+    padding-bottom: 0.8em;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border: 2px solid blueviolet;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    line-height: 55px;
+    transition: background-color 0.3s;
+}
+
+@media (max-width: 768px) {
+    .icon-link {
+        margin-left: 10px;
+    }
+}
+
+.icon-link:hover {
+    background-color: #000;
+    color: aliceblue;
+}
+
+.row-img {
+    max-width: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.carousel :where(.card, .img) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.carousel.no-trantition {
+    scroll-behavior: auto;
+}
+
+.carousel .dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel .dragging .card {
+    cursor: grab;
+}
+
+.carousel .card {
+    scroll-snap-align: start;
+    height: 300px;
+    width: 190px;
+    list-style: none;
+    border: none;
+    background: gainsboro;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row-img .icon2 {
+    height: 50px;
+    width: 50px;
+    background: aliceblue;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-50px);
+    box-shadow: 0 3px 6px rgb(0, 0, 0, 0.23);
+    margin: 5px;
+}
+
+.row-img .icon1 {
+    height: 50px;
+    width: 50px;
+    background: aliceblue;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 100%;
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-50px);
+    box-shadow: 0 3px 6px rgb(0, 0, 0, 0.23);
+    margin: 5px;
+}
+
+.row .icon1:first-child:first-child {
+    left: -22px;
+}
+
+.row .icon2:last-child {
+    right: -22px;
+}
+
+.row-img .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 5) - 50px);
+    gap: 1px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.card .img {
+    background-color: blueviolet;
+    width: 179px;
+    height: 158px;
+}
+
+.card .img img {
+    width: 170px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 4px solid gainsboro;
+}
+
+.card h2 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 20px 0 5px;
+}
+
+.card span {
+    text-align: center;
+    font-family: "Comic Neue", cursive;
+    color: rgba(137, 43, 226, 0.511);
+    font-size: 0.8rem;
+}
+
+.cont {
+    margin-left: 10rem;
+}
+
+.icono {
+    font-size: 1.5em;
+    color: aliceblue;
+    margin: 0.5rem;
+}
+
+.iconos {
+    margin-bottom: 5rem;
+}
+
+.siguenos {
+    text-align: center;
+}
+
+.icono-grande {
+    font-size: 35px;
+}
+
+@media screen and (max-width: 767px) {
+    button.navbar-toggler {
+        transform: translateY(5px);
+    }
+
+    .titulo1,
+    .titulo2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .row-img .carousel {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .row-img .carousel {
+        grid-auto-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .columna-link {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .titulo-container {
+        transform: translateX(-10%);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .row-img .carousel {
+        grid-auto-columns: calc((100% / 3) - 15px);
+    }
+
+    .titulo-container {
+        transform: translateX(-25%);
+    }
+}
