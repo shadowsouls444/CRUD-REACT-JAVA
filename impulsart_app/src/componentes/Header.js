@@ -10,7 +10,10 @@ export default function Header() {
         <Link to="/ListObra">CRUD obra</Link>
   <br></br>
         <Link to="/ListSubasta">CRUD subasta</Link>
+        <br></br>
+        <Link to="/paypal">paypal</Link>
     </>
+ 
 
   )
 }
