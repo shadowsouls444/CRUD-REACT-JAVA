@@ -10,7 +10,7 @@ import EditObra from './componentes/page/CRUD/edit/EditObra';
 import ListSubasta from './componentes/page/CRUD/dashboard/ListSubasta';
 import FormSubasta from './componentes/page/CRUD/create/FormSubasta';
 import EditSubasta from './componentes/page/CRUD/edit/EditSubasta';
-import PayPalButton from './componentes/paypal';
+import Formulario from './componentes/Formulario';
 
 function App() {
 
@@ -42,7 +42,7 @@ function App() {
 <Route path="/EditSubasta/:pkCodSubasta" element = {<EditSubasta />}/>
 {/*CRUD SUBASTA*/}
 
-<Route path="/paypal" element = {<PayPalButton />}/>
+<Route path="/paypal" element = {<Formulario />}/>
 
           </Routes>   
  

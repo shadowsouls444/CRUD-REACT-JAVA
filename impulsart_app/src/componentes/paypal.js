@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react';
 
-export const paypal = () => {
-  return (
-    
     function PayPalButton() {
       useEffect(() => {
         const initPayPalButton = () => {
@@ -50,8 +47,5 @@ export const paypal = () => {
     
       return <div id="paypal-button-container"></div>;
     }
-
-  )
-}
-
-export default paypal;
+    
+export default PayPalButton;

@@ -11,7 +11,7 @@ export default function Header() {
   <br></br>
         <Link to="/ListSubasta">CRUD subasta</Link>
         <br></br>
-        <Link to="/paypal">paypal</Link>
+        <Link to="/formulario">formulario</Link>
     </>
  
 
