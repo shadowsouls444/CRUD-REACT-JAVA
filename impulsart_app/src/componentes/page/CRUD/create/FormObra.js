@@ -75,7 +75,7 @@ export const FormObra = () => {
             </div>
             <br />
             <div className="form-check mb-3">
-              <button type="submit">Crear obra</button>
+              <button type="submit" className='btn btn-outline-success'>Crear obra</button>
             </div>
           </form>
           <div id="mensajeError" className="mensaje-error"></div>

@@ -21,7 +21,7 @@ export const FormUsuario = () => {
 
     })
 
-    const{identificacion, nombre, apellido, fechaNacimiento, email, numCelular, direccion, contrasena, nombreUsuario} = usuario
+    const{ nombre, apellido, fechaNacimiento, email, numCelular, direccion, contrasena, nombreUsuario} = usuario
 
     const onInputChange = (e) => {
        
@@ -49,10 +49,6 @@ export const FormUsuario = () => {
 
           <h1>Crear usuario</h1>
           <form onSubmit = {(e) => onSubmit(e)}>
-            <div className="identificacion">
-              <input className="form-control" onChange = {(e) => onInputChange(e)} value = {identificacion} type={"number"} name="identificacion" placeholder="Ingrese su documento" required />
-            </div>
-            <br />
             <div className="nombre">
               <input className="form-control" onChange = {(e) => onInputChange(e)} value = {nombre} type={"text"} name="nombre" placeholder="Ingrese su Nombre" required />
             </div>
@@ -89,7 +85,8 @@ export const FormUsuario = () => {
               <input type="checkbox" className="form-check-input" id="acepto_terminos" required />
               <label className="form-check-label" htmlFor="acepto_terminos">Acepto los Términos y Condiciones</label>
               <br />
-              <button type="submit">Registrarse</button>
+              <br/>
+              <button type="submit" className='btn btn-outline-success'>Registrarse</button>
             </div>
           </form>
           <div id="mensajeError" className="mensaje-error"></div>

@@ -86,7 +86,7 @@ export const EditObra = () => {
             </div>
             <br />
             <div className="form-check mb-3">
-              <button type="submit">Editar obra</button>
+              <button type="submit" className='btn btn-outline-success'>Editar obra</button>
             </div>
           </form>
           <div id="mensajeError" className="mensaje-error"></div>

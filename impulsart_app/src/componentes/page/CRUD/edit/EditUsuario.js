@@ -94,7 +94,7 @@ export const EditUsuario = () => {
             </div>
             <br />
             <div className="form-check mb-3">
-              <button type="submit">Editar</button>
+              <button type="submit" className='btn btn-outline-success'>Editar</button>
             </div>
           </form>
           <div id="mensajeError" className="mensaje-error"></div>

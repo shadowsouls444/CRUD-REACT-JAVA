@@ -73,7 +73,7 @@ export const ListObra = () => {
 
     //DELETE USERS
     const deleteObra = async (pkCod_Producto) => {
-        await axios.delete(`http://localhost:8086/api/usuario/delete/${pkCod_Producto}`)
+        await axios.delete(`http://localhost:8086/api/obra/delete/${pkCod_Producto}`)
         getObra()
     }
     //DELETE USERS
@@ -89,11 +89,17 @@ export const ListObra = () => {
                 onChange={(e) => setCategoria(e.target.value)}
                 placeholder="Buscar por categoría"/>
 
+                <br></br>
+                <br></br>
+
             <input
                 type="text"
                 value={nombreProducto}
                 onChange={(e) => setNombreProducto(e.target.value)}
                 placeholder="Buscar por nombre de producto"/>
+
+                <br></br>
+                <br></br>
 
             <Link to="/CreateObra" className='btn btn-primary'>Crear obra</Link>
 
@@ -104,6 +110,7 @@ export const ListObra = () => {
                             <th scope="col">Nombre</th>
                             <th scope="col">Categoria</th>
                             <th scope="col">Cantidad</th>
+                            <th scope="col">Acciones</th>
                             {/* Aquí puedes agregar más encabezados si es necesario */}
                         </tr>
                     </thead>

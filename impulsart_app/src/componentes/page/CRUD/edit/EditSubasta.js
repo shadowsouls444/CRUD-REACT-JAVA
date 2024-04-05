@@ -63,7 +63,7 @@ export const EditSubasta = () => {
             <br />
             <div className="form-check mb-3">
               <br />
-              <button type="submit">Editar subasta</button>
+              <button type="submit" className='btn btn-outline-success'>Editar subasta</button>
             </div>
           </form>
           <div id="mensajeError" className="mensaje-error"></div>

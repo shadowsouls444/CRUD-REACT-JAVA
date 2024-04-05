@@ -59,8 +59,8 @@ export const ListUsuario = () => {
                                 <td>{usuario.email}</td>
                                 <td>{usuario.direccion}</td>
                                 <td>
-                                    <Link to = {`/EditUser/${usuario.identificacion}`} ClassName = "btn btn-outline-primary mx-2">Edit</Link>
-                                    <button onClick={() => deleteUsuario (usuario.identificacion)} ClassName = "btn btn-danger mx-2">Delete</button>
+                                    <Link to = {`/EditUser/${usuario.identificacion}`} className="btn btn-outline-primary mx-2">Edit</Link>
+                                    <button onClick={() => deleteUsuario (usuario.identificacion)} className="btn btn-danger mx-2">Delete</button>
                                 </td>
                             </tr>
                         ))}
